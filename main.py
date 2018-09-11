@@ -17,10 +17,9 @@ class SConnect:
 
     def portscan(self):
         try:
-            print(self.s_connection.connect(self.address))
+            self.s_connection.connect(self.address)
 
         except ConnectionRefusedError as err:
-            print("1")
             logging.warning(err)
 
 
